@@ -1,3 +1,15 @@
-Construisez et testez une infrastructure de données
+# Construisez et testez une infrastructure de données
 
-En attente de réalisation.....
+
+# Description 
+
+
+
+## 📂 Structure du Répertoire
+
+```text
+projet_8
+
+
+└── README.md                                       # Documentation du projet
+```
