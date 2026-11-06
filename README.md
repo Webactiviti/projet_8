@@ -167,4 +167,20 @@ projet_8
 |    └── Weather_Underground_Ichtegem_BE.xlsx       # fichier data
 └── test_connexion.py                               # test de la connexion avec postgresql
 └── README.md                                       # Documentation du projet
+
+└── weather_dtb/
+    ├── dbt_project.yml
+    └── models/
+        ├── sources.yml                 -- Déclaration des sources brutes Airbyte
+        ├── staging/
+            ├── stg_weather_la_madeleine.sql
+            ├── stg_weather_ichtegem.sql
+            └── stg_infoclimat.sql
+        ├── intermediate/
+            └── int_weather_unified.sql  -- Modèle d'union des sources
+        └── marts/
+            ├── dim_weather_stations.sql -- Dimension des stations (avec vos métadonnées)
+            └── fct_weather_measurements.sql -- Table de faits finale
+
+
 ```
