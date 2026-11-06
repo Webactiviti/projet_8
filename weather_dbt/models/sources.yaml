@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: weather_la_madeleine
+    schema: weather_la_madeleine
+    tables:
+      - name: weather_la_madeleine
+
+  - name: weather_ichtegem
+    schema: weather_ichtegem
+    tables:
+      - name: weather_ichtegem
+
+  - name: infoclimat
+    schema: infoclimat
+    tables:
+      - name: infoclimat

@@ -1,0 +1,301 @@
+[0m19:18:12.986395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc95b279d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc959f27ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc959f27b10>]}
+
+
+============================== 19:18:13.019277 | aafe9e49-add5-4a37-896f-e34bb493ad7a ==============================
+[0m19:18:13.019277 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:18:13.019950 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '.', 'log_format': 'default', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'write_json': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'introspect': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'log_path': 'logs', 'printer_width': '80', 'log_cache_events': 'False', 'empty': 'None', 'use_experimental_parser': 'False'}
+[0m19:18:13.059648 [info ] [MainThread]: dbt version: 1.12.6
+[0m19:18:13.059988 [info ] [MainThread]: python version: 3.13.13
+[0m19:18:13.060227 [info ] [MainThread]: python path: /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/bin/python3
+[0m19:18:13.060463 [info ] [MainThread]: os info: Linux-7.0.0-38-generic-x86_64-with-glibc2.39
+[0m19:18:13.060716 [info ] [MainThread]: Using profiles dir at .
+[0m19:18:13.060946 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m19:18:13.061182 [info ] [MainThread]: Using dbt_project.yml file at /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/dbt_project.yml
+[0m19:18:13.061448 [info ] [MainThread]: Configuration:
+[0m19:18:13.061704 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m19:18:13.061935 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:18:13.062187 [info ] [MainThread]: Required dependencies:
+[0m19:18:13.062497 [debug] [MainThread]: Executing "git --help"
+[0m19:18:13.068290 [debug] [MainThread]: STDOUT: "b"usage : git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone     Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init      Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add       Ajouter le contenu de fichiers dans l'index\n   mv        D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore   Restaurer les fichiers l'arbre de travail\n   rm        Supprimer des fichiers de la copie de travail et de l'index\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect    Trouver par recherche binaire la modification qui a introduit un bogue\n   diff      Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep      Afficher les lignes correspondant \xc3\xa0 un motif\n   log       Afficher l'historique des validations\n   show      Afficher diff\xc3\xa9rents types d'objets\n   status    Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch    Lister, cr\xc3\xa9er ou supprimer des branches\n   commit    Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge     Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase    R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset     R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch    Basculer de branche\n   tag       Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch     T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull      Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push      Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m19:18:13.069105 [debug] [MainThread]: STDERR: "b''"
+[0m19:18:13.069341 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:18:13.069619 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:18:13.069921 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:18:13.070174 [info ] [MainThread]: dbt looked for a profiles.yml file in ./profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:18:13.070429 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/dbt_project.yml> not found
+
+[0m19:18:13.070977 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.15457468, "process_in_blocks": "136", "process_kernel_time": 0.070953, "process_mem_max_rss": "129772", "process_out_blocks": "1416", "process_user_time": 1.216198}
+[0m19:18:13.071341 [debug] [MainThread]: Command `dbt debug` failed at 19:18:13.071264 after 0.16 seconds
+[0m19:18:13.071641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc959d6b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc959fa3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc959de4270>]}
+[0m19:18:13.071942 [debug] [MainThread]: Flushing usage events
+[0m19:18:13.529249 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:16:57.963449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a7869d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a6517ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a6517b10>]}
+
+
+============================== 21:16:57.966159 | 0b88aecf-a187-40dc-8a12-eb6a12d91259 ==============================
+[0m21:16:57.966159 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:16:57.966591 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'profiles_dir': '/home/jean-christophe/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_experimental_parser': 'False', 'introspect': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'write_json': 'True', 'log_path': 'logs', 'empty': 'None', 'target_path': 'None', 'log_format': 'default', 'hints_enabled': 'True', 'invocation_command': 'dbt init weather_dbt', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'printer_width': '80', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'quiet': 'False', 'fail_fast': 'False'}
+[0m21:16:57.975967 [info ] [MainThread]: Creating dbt configuration folder at /home/jean-christophe/.dbt
+[0m21:16:57.977063 [debug] [MainThread]: Starter project path: /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m21:16:57.978872 [info ] [MainThread]: Setting up your profile.
+[0m21:20:03.236582 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m21:20:03.247698 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/cli/main.py", line 504, in init
+    results = task.run()
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 363, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/task/init.py", line 132, in generate_target_from_input
+    target[key] = click.prompt(
+                  ~~~~~~~~~~~~^
+        text, default=default, hide_input=hide_input, type=type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/click/termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+  File "/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/click/termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:20:03.252266 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 185.35797, "process_in_blocks": "16", "process_kernel_time": 0.06908, "process_mem_max_rss": "114288", "process_out_blocks": "368", "process_user_time": 1.250442}
+[0m21:20:03.254548 [debug] [MainThread]: Command `dbt init` failed at 21:20:03.254074 after 185.36 seconds
+[0m21:20:03.256319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a62c1220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a624e570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e55a63e7790>]}
+[0m21:20:03.258332 [debug] [MainThread]: Flushing usage events
+[0m21:20:03.730739 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:20:09.333724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4105171d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4103e1fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4103e1fb10>]}
+
+
+============================== 21:20:09.336313 | a2779f13-961b-45ce-b5d7-da17d802d6ac ==============================
+[0m21:20:09.336313 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:20:09.336740 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'quiet': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'empty': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'log_path': 'logs', 'debug': 'False', 'hints_enabled': 'True', 'log_format': 'default', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init weather_dbt', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/home/jean-christophe/.dbt'}
+[0m21:20:09.345420 [info ] [MainThread]: A project called weather_dbt already exists here.
+[0m21:20:09.346002 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.07738367, "process_in_blocks": "0", "process_kernel_time": 0.070045, "process_mem_max_rss": "109340", "process_out_blocks": "8", "process_user_time": 1.122731}
+[0m21:20:09.346386 [debug] [MainThread]: Command `dbt init` succeeded at 21:20:09.346306 after 0.08 seconds
+[0m21:20:09.346663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4103c62650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4103e9b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4103c3b9b0>]}
+[0m21:20:09.346960 [debug] [MainThread]: Flushing usage events
+[0m21:20:09.759170 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:20:33.774473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d5c75d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d4923ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d4923b10>]}
+
+
+============================== 21:20:33.777109 | 39290603-3666-4ed9-80ae-b2938e0661f6 ==============================
+[0m21:20:33.777109 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:20:33.777530 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_colors': 'True', 'warn_error': 'None', 'profiles_dir': '/home/jean-christophe/.dbt', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init weather_dbt', 'version_check': 'True', 'quiet': 'False', 'debug': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'target_path': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'introspect': 'True', 'cache_selected_only': 'False', 'hints_enabled': 'True'}
+[0m21:20:33.785983 [debug] [MainThread]: Starter project path: /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m21:20:33.787527 [info ] [MainThread]: Setting up your profile.
+[0m21:21:40.262766 [info ] [MainThread]: Profile weather_dbt written to /home/jean-christophe/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m21:21:40.268299 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m21:21:40.270547 [info ] [MainThread]: dbt version: 1.12.6
+[0m21:21:40.271992 [info ] [MainThread]: python version: 3.13.13
+[0m21:21:40.273616 [info ] [MainThread]: python path: /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/.venv/bin/python3
+[0m21:21:40.274941 [info ] [MainThread]: os info: Linux-7.0.0-38-generic-x86_64-with-glibc2.39
+[0m21:21:40.319754 [info ] [MainThread]: Using profiles dir at /home/jean-christophe/.dbt
+[0m21:21:40.320178 [info ] [MainThread]: Using profiles.yml file at /home/jean-christophe/.dbt/profiles.yml
+[0m21:21:40.320450 [info ] [MainThread]: Using dbt_project.yml file at /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/weather_dbt/dbt_project.yml
+[0m21:21:40.321039 [info ] [MainThread]: adapter type: postgres
+[0m21:21:40.321320 [info ] [MainThread]: adapter version: 1.11.0
+[0m21:21:40.416540 [info ] [MainThread]: Configuration:
+[0m21:21:40.416921 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:21:40.417208 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:21:40.417444 [info ] [MainThread]: Required dependencies:
+[0m21:21:40.417780 [debug] [MainThread]: Executing "git --help"
+[0m21:21:40.419741 [debug] [MainThread]: STDOUT: "b"usage : git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone     Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init      Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add       Ajouter le contenu de fichiers dans l'index\n   mv        D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore   Restaurer les fichiers l'arbre de travail\n   rm        Supprimer des fichiers de la copie de travail et de l'index\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect    Trouver par recherche binaire la modification qui a introduit un bogue\n   diff      Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep      Afficher les lignes correspondant \xc3\xa0 un motif\n   log       Afficher l'historique des validations\n   show      Afficher diff\xc3\xa9rents types d'objets\n   status    Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch    Lister, cr\xc3\xa9er ou supprimer des branches\n   commit    Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge     Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase    R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset     R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch    Basculer de branche\n   tag       Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch     T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull      Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push      Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m21:21:40.420144 [debug] [MainThread]: STDERR: "b''"
+[0m21:21:40.420390 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:21:40.420643 [info ] [MainThread]: Connection:
+[0m21:21:40.420901 [info ] [MainThread]:   host: localhost
+[0m21:21:40.421150 [info ] [MainThread]:   port: 5433
+[0m21:21:40.421397 [info ] [MainThread]:   user: postgres
+[0m21:21:40.421717 [info ] [MainThread]:   database: data_weather
+[0m21:21:40.422080 [info ] [MainThread]:   schema: public
+[0m21:21:40.422405 [info ] [MainThread]:   connect_timeout: 10
+[0m21:21:40.422793 [info ] [MainThread]:   role: None
+[0m21:21:40.423315 [info ] [MainThread]:   search_path: None
+[0m21:21:40.423677 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:21:40.423990 [info ] [MainThread]:   sslmode: None
+[0m21:21:40.424248 [info ] [MainThread]:   sslcert: None
+[0m21:21:40.424520 [info ] [MainThread]:   sslkey: None
+[0m21:21:40.424792 [info ] [MainThread]:   sslrootcert: None
+[0m21:21:40.425038 [info ] [MainThread]:   application_name: dbt
+[0m21:21:40.425280 [info ] [MainThread]:   autocommit: False
+[0m21:21:40.425538 [info ] [MainThread]:   retries: 1
+[0m21:21:40.425899 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m21:21:40.471975 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:21:40.513844 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:21:40.514173 [debug] [MainThread]: On debug: select 1 as id
+[0m21:21:40.514412 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:21:40.524140 [debug] [MainThread]: SQL status: SELECT 1 in 0.010 seconds
+[0m21:21:40.524930 [debug] [MainThread]: On debug: Close
+[0m21:21:40.525220 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:21:40.525524 [info ] [MainThread]: [32mAll checks passed![0m
+[0m21:21:40.525918 [info ] [MainThread]: Your new dbt project "weather_dbt" was created!
+Initialized new project in /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/weather_dbt/weather_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:21:40.526631 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 66.81888, "process_in_blocks": "1672", "process_kernel_time": 0.101906, "process_mem_max_rss": "127328", "process_out_blocks": "328", "process_user_time": 1.421688}
+[0m21:21:40.527045 [debug] [MainThread]: Command `dbt init` succeeded at 21:21:40.526951 after 66.82 seconds
+[0m21:21:40.527327 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:21:40.527606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d46da8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d499f410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea0d3d5c5a0>]}
+[0m21:21:40.527918 [debug] [MainThread]: Flushing usage events
+[0m21:21:41.020415 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:38:06.692417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc7aa51d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc79567ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc79567b10>]}
+
+
+============================== 17:38:06.695045 | 96b6df26-7145-4eed-b47d-0875f35d0f0c ==============================
+[0m17:38:06.695045 [info ] [MainThread]: Running with dbt=1.12.6
+[0m17:38:06.695479 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'use_colors': 'True', 'debug': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True', 'log_path': 'logs', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/jean-christophe/.dbt', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'empty': 'False', 'maximum_seed_size_mib': '1'}
+[0m17:38:06.695916 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:38:06.696920 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07188315, "process_in_blocks": "0", "process_kernel_time": 0.069043, "process_mem_max_rss": "109636", "process_out_blocks": "24", "process_user_time": 1.154722}
+[0m17:38:06.697481 [debug] [MainThread]: Command `dbt run` failed at 17:38:06.697385 after 0.07 seconds
+[0m17:38:06.697816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc79585f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc7970f410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfc795b5370>]}
+[0m17:38:06.698217 [debug] [MainThread]: Flushing usage events
+[0m17:38:07.134991 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:45:34.849543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74108467dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74108317bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74108317bb10>]}
+
+
+============================== 17:45:34.852328 | ad15154d-15c7-4e1a-af26-5a63a56883f7 ==============================
+[0m17:45:34.852328 [info ] [MainThread]: Running with dbt=1.12.6
+[0m17:45:34.852822 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'log_path': '/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/logs', 'use_colors': 'True', 'log_format': 'default', 'static_parser': 'True', 'warn_error': 'None', 'empty': 'False', 'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'profiles_dir': '/home/jean-christophe/.dbt', 'write_json': 'True', 'target_path': 'None'}
+[0m17:45:34.853841 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/jean-christophe/.dbt/profiles.yml
+  
+[0m17:45:34.854601 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07181636, "process_in_blocks": "0", "process_kernel_time": 0.052991, "process_mem_max_rss": "109428", "process_out_blocks": "16", "process_user_time": 1.147817}
+[0m17:45:34.855163 [debug] [MainThread]: Command `dbt run` failed at 17:45:34.854968 after 0.07 seconds
+[0m17:45:34.855556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74108319df30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x741083327530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7410831cd370>]}
+[0m17:45:34.855864 [debug] [MainThread]: Flushing usage events
+[0m17:45:35.290217 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:48:07.917217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be54651d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be53167ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be53167b10>]}
+
+
+============================== 17:48:07.919799 | 4d7bbd4c-de81-43a3-ac6e-958ad6b03584 ==============================
+[0m17:48:07.919799 [info ] [MainThread]: Running with dbt=1.12.6
+[0m17:48:07.920808 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'version_check': 'True', 'profiles_dir': '/home/jean-christophe/.dbt', 'cache_selected_only': 'False', 'log_path': '/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/logs', 'target_path': 'None', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'static_parser': 'True', 'quiet': 'False', 'fail_fast': 'False', 'printer_width': '80', 'no_print': 'None', 'hints_enabled': 'True', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'use_experimental_parser': 'False', 'warn_error': 'None', 'empty': 'False', 'log_cache_events': 'False'}
+[0m17:48:07.922309 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/jean-christophe/.dbt/profiles.yml
+  
+[0m17:48:07.923121 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.073002934, "process_in_blocks": "0", "process_kernel_time": 0.05995, "process_mem_max_rss": "109660", "process_out_blocks": "8", "process_user_time": 1.154039}
+[0m17:48:07.923537 [debug] [MainThread]: Command `dbt run` failed at 17:48:07.923455 after 0.07 seconds
+[0m17:48:07.923828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be53185f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be5330f530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73be531b5370>]}
+[0m17:48:07.924161 [debug] [MainThread]: Flushing usage events
+[0m17:48:08.375832 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:03:13.181671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ed275d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ebd7bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ebd7bb10>]}
+
+
+============================== 18:03:13.184292 | d755c55d-36b9-4d79-be34-07d6c9df2550 ==============================
+[0m18:03:13.184292 [info ] [MainThread]: Running with dbt=1.12.6
+[0m18:03:13.184729 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'debug': 'False', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'target_path': 'None', 'use_colors': 'True', 'profiles_dir': '/home/jean-christophe/.dbt', 'empty': 'False', 'log_path': '/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/logs', 'hints_enabled': 'True', 'quiet': 'False', 'log_format': 'default', 'no_print': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'static_parser': 'True', 'invocation_command': 'dbt run'}
+[0m18:03:13.331759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ecfd2190>]}
+[0m18:03:13.388850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ed6d3df0>]}
+[0m18:03:13.389731 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:03:13.438552 [debug] [MainThread]: checksum: 78aa494bf7eb3e22ceb40ddff1c5642cb02bf5c4139d46cb5ae6fa0323887bd3, vars: {}, profile: weather_dbt, target: dev, version: 1.12.6
+[0m18:03:13.439075 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:03:13.439357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ebe6e350>]}
+[0m18:03:14.118631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ed13cc80>]}
+[0m18:03:14.158909 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/manifest.json
+[0m18:03:14.160505 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/semantic_manifest.json
+[0m18:03:14.185678 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/osi_document.json
+[0m18:03:14.206295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ea3075b0>]}
+[0m18:03:14.206701 [info ] [MainThread]: Found 477 macros
+[0m18:03:14.206999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd755c55d-36b9-4d79-be34-07d6c9df2550', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ea7094a0>]}
+[0m18:03:14.208527 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m18:03:14.208989 [debug] [MainThread]: Command end result
+[0m18:03:14.233417 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/manifest.json
+[0m18:03:14.236317 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/semantic_manifest.json
+[0m18:03:14.237759 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/osi_document.json
+[0m18:03:14.240443 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/run_results.json
+[0m18:03:14.240989 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.126723, "process_in_blocks": "368", "process_kernel_time": 0.080962, "process_mem_max_rss": "124084", "process_out_blocks": "3880", "process_user_time": 2.169981}
+[0m18:03:14.241371 [debug] [MainThread]: Command `dbt run` succeeded at 18:03:14.241292 after 1.13 seconds
+[0m18:03:14.241665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ebed8f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975eafcbac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7975ea7cf960>]}
+[0m18:03:14.241954 [debug] [MainThread]: Flushing usage events
+[0m18:03:15.019850 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:04.011869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651c47dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651af7fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651af7fb10>]}
+
+
+============================== 18:08:04.014517 | 781ce9b6-1262-4b05-864b-7e7857db76be ==============================
+[0m18:08:04.014517 [info ] [MainThread]: Running with dbt=1.12.6
+[0m18:08:04.014939 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': '/home/jean-christophe/.dbt', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_path': '/home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/logs', 'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'target_path': 'None', 'use_colors': 'True', 'log_cache_events': 'False'}
+[0m18:08:04.151686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '781ce9b6-1262-4b05-864b-7e7857db76be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651c1ce190>]}
+[0m18:08:04.208737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '781ce9b6-1262-4b05-864b-7e7857db76be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651c8d3df0>]}
+[0m18:08:04.209508 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:08:04.259502 [debug] [MainThread]: checksum: 78aa494bf7eb3e22ceb40ddff1c5642cb02bf5c4139d46cb5ae6fa0323887bd3, vars: {}, profile: weather_dbt, target: dev, version: 1.12.6
+[0m18:08:04.393567 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:08:04.393981 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:08:04.394289 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:08:04.398542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '781ce9b6-1262-4b05-864b-7e7857db76be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x716519dc7c50>]}
+[0m18:08:04.445303 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/manifest.json
+[0m18:08:04.446954 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/semantic_manifest.json
+[0m18:08:04.456137 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/osi_document.json
+[0m18:08:04.461640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '781ce9b6-1262-4b05-864b-7e7857db76be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651996a8a0>]}
+[0m18:08:04.462014 [info ] [MainThread]: Found 477 macros
+[0m18:08:04.462302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '781ce9b6-1262-4b05-864b-7e7857db76be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7165199b65f0>]}
+[0m18:08:04.463617 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m18:08:04.467267 [debug] [MainThread]: Command end result
+[0m18:08:04.490346 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/manifest.json
+[0m18:08:04.492120 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/semantic_manifest.json
+[0m18:08:04.493496 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/osi_document.json
+[0m18:08:04.496074 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jean-christophe/Projects/ProjectOpenClassrooms/env/Projet_8/target/run_results.json
+[0m18:08:04.496629 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.5531299, "process_in_blocks": "0", "process_kernel_time": 0.094977, "process_mem_max_rss": "123192", "process_out_blocks": "2152", "process_user_time": 1.606612}
+[0m18:08:04.496999 [debug] [MainThread]: Command `dbt run` succeeded at 18:08:04.496921 after 0.55 seconds
+[0m18:08:04.497308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7165199e9980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71651b0d8f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7165195bc350>]}
+[0m18:08:04.497598 [debug] [MainThread]: Flushing usage events
+[0m18:08:04.958921 [debug] [MainThread]: An error was encountered while trying to flush usage events

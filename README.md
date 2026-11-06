@@ -144,7 +144,17 @@ Projet sur des données météo avec Airbyte , Docker , Postgres et AWS pour le 
 
 11. Créer la Destination vers Postgres SQL dans Airbyte
 
-12. 
+12. Faire la connexion entre les source et postgresql
+
+13. Installer dbt dans le projet
+
+    Commande
+
+        uv add dbt-postgres
+
+14. Créer vos requetes SQL pour chaque fichier dans le répertoire ex : weather_dbt/models
+
+15. Créer votre fichier : dbt_project.yml
 
 ## 📂 Structure du Répertoire
 
@@ -155,6 +165,6 @@ projet_8
 |    └── Data_Source1_011024-071024.json            # fichier data
 |    └── Weather_Underground_La_Madeleine_FR.xlsx   # fichier data
 |    └── Weather_Underground_Ichtegem_BE.xlsx       # fichier data
-└── test_pg.py                                      # test de la connexion avec postgresql
+└── test_connexion.py                               # test de la connexion avec postgresql
 └── README.md                                       # Documentation du projet
 ```
