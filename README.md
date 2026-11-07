@@ -156,6 +156,23 @@ Projet sur des données météo avec Airbyte , Docker , Postgres et AWS pour le 
 
 15. Créer votre fichier : dbt_project.yml
 
+16. Liste des commandes dbt
+
+    aller dans le répertoire weather_dbt
+
+        uv run dbt run
+
+    ou forcer la recomplilation complète
+
+        uv run dbt run --full-refresh
+
+
+    Pour lancer un des modèles
+
+        uv run dbt run --select marts
+
+
+
 ## 📂 Structure du Répertoire
 
 ```text

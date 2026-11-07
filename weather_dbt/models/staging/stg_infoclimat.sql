@@ -6,7 +6,6 @@ SELECT
     station_key.key AS station_id,
     
     -- Extraction et typage des champs météo horaires
-    (record.value ->> 'dh_utc')::timestamp AS dh_utc,
     (record.value ->> 'temperature')::numeric AS temperature,
     (record.value ->> 'pression')::numeric AS pression,
     (record.value ->> 'humidite')::numeric AS humidite,
@@ -15,8 +14,7 @@ SELECT
     (record.value ->> 'vent_rafales')::numeric AS vent_rafales,
     (record.value ->> 'vent_direction')::numeric AS vent_direction,
     (record.value ->> 'pluie_1h')::numeric AS pluie_1h,
-    (record.value ->> 'pluie_3h')::numeric AS pluie_3h,
-    (record.value ->> 'nebulosite')::numeric AS nebulosite
+    (record.value ->> 'pluie_3h')::numeric AS pluie_3h
 
 FROM {{ source('infoclimat', 'infoclimat') }}
 
