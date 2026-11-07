@@ -16,18 +16,19 @@ Projet sur des données météo avec Airbyte , Docker , Postgres et AWS pour le 
 
 2. Installation de postgresql (le port a été modifie par 5433 si il y a postgresql déjà installé)
 
-    Exécutez cette commande dans votre terminal 
+    Exécutez cette commande dans votre terminal (modifier le user et le password )
 
         docker run --name pg-airbyte \
-          -e POSTGRES_PASSWORD=postgres \
-          -e POSTGRES_USER=postgres \
-          -e POSTGRES_DB=data_weather \
+          -e POSTGRES_PASSWORD=${POSTGRES_PASSWORD} \
+          -e POSTGRES_USER=${POSTGRES_USER} \
+          -e POSTGRES_DB=${POSTGRES_DB} \
           -p 5433:5432 \
           -d postgres:15
 
-    Modifier le user et password dans votre projet
+    Modifier le user et password dans votre projet et  sécuriser les identifiants 
+    Modifier .env.exemple en .env puis vos identifiants
 
-    Autre méthode : utiliser le fichier 
+    Autre méthode : utiliser le fichier pour une installation compose
 
         docker-compose.yml
 
@@ -183,8 +184,9 @@ projet_8
 |    └── Weather_Underground_La_Madeleine_FR.xlsx   # fichier data
 |    └── Weather_Underground_Ichtegem_BE.xlsx       # fichier data
 └── test_connexion.py                               # test de la connexion avec postgresql
+└── inspect_json.py                                 # verifie le json file
 └── README.md                                       # Documentation du projet
-
+└── .env.exemple                                    # gestion des identifiants
 └── weather_dtb/
     ├── dbt_project.yml
     └── models/
